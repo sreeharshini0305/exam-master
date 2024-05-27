@@ -1,0 +1,107 @@
+.whole-navbar-containes {
+    position: sticky;
+    top: 0;
+    user-select: none;
+    z-index: 2;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    background-color: #DFD0B8;
+    color: #153448;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5%;
+    align-items: center;
+}
+
+.logo-header a {
+    color: #153448;
+}
+
+.navbar-logo-img {
+    width: 46px;
+    height: 42px;
+}
+
+.options ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    color: #153448;
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+}
+
+.options ul li a {
+    color: #153448;
+}
+
+.menu-three-lines-icon {
+    width: 30px;
+    height: 25px;
+    transition: all 1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.cross-menu-icon {
+    width: 30px;
+    height: 25px;
+    display: none;
+}
+
+.non-display-navbar {
+    display: none
+}
+
+.display-response-navbar {
+    text-align: center;
+    background-color: black;
+    padding-bottom: 2%;
+}
+
+.display-response-navbar ul li {
+    padding: 5px;
+}
+
+.display-response-navbar ul li a {
+    color: #153448;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (min-width:700px) {
+    .options-inresponse {
+        display: none;
+    }
+
+    .display-response-navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .options {
+        display: none;
+    }
+
+    .logo-header a {
+        color: #153448;
+        font-size: 19px;
+    }
+
+    .navbar-logo-img {
+        width: 34px;
+        height: 28px;
+        padding-top: 10px;
+    }
+}

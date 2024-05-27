@@ -1,0 +1,97 @@
+.student-profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-profile-header-recruiter h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #153448;
+    font-family: sans-serif;
+}
+
+.student-profile-container-background-img-recruiter {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.datalist-recruiter {
+    width: 20rem;
+    padding: 2%;
+    padding-right: 5%;
+}
+
+.datalist-labels-recruiter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+
+}
+
+.datalist-labels-recruiter label {
+    font-size: 1.2rem;
+    margin-bottom: 1%;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.datalist-labels-recruiter input {
+    width: 100%;
+    height: 30px;
+    padding-left: 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(240, 239, 239, 0.7);
+    transition: all 1s linear ease;
+}
+
+.datalist-labels-recruiter input:hover {
+    border: 1px solid #DFD0B8;
+    background-color: white;
+    cursor: pointer;
+}
+
+.datalist-labels-recruiter input:focus {
+    outline-style: none;
+    border: 1px solid rgb(58, 235, 58);
+    font-weight: bold;
+    background-color: white;
+}
+
+.student-profile-container-background-img-recruiter Button {
+    margin-top: 5%;
+}
+
+@media screen and (max-width:410px) {
+    .datalist-recruiter {
+        width: 15rem;
+        padding: 2%;
+        padding-right: 5%;
+    }
+
+    .datalist-labels-recruiter label {
+        font-size: 0.8rem;
+        margin-bottom: 1%;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .datalist-labels-recruiter input {
+        width: 100%;
+        height: 30px;
+        padding-left: 0;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,117 @@
+/* first div css*/
+.logout-test-first-div-bg-image {
+    min-height: 95vh;
+    background-image:
+        linear-gradient(45deg, #153448, #DFD0B8), url('../images/lotestbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    user-select: none;
+}
+
+.logout-test-first-div-bg-image h2 {
+    color: #FFFFFF;
+    font-family: "Karla", Sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.logout-test-first-div-bg-image h1 {
+    color: #DFD0B8;
+    font-family: "Karla", Sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 4rem;
+}
+
+@media screen and (max-width:600px) {
+    .logout-test-first-div-bg-image h2 {
+        color: #FFFFFF;
+        font-family: "Karla", Sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .logout-test-first-div-bg-image h1 {
+        color: #DFD0B8;
+        font-family: "Karla", Sans-serif;
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 4rem;
+    }
+}
+
+/* second div css */
+.logout-test-page-second-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.logout-test-page-second-div h1 {
+    font-family: "Karla", Sans-serif;
+    font-size: 2.1rem;
+    font-weight: 800;
+}
+
+.logout-test-page-second-div p {
+    margin-top: 2%;
+    color: #7A7A7A;
+    font-size: 1.12rem;
+    font-family: sans-serif;
+    width: 60%;
+}
+
+@media screen and (max-width:600px) {
+    .logout-test-page-second-div h1 {
+        font-size: 1.6rem;
+    }
+
+    .logout-test-page-second-div p {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+}
+
+.logout-test-page-eigth-div h2 {
+    color: #FFFFFF;
+    font-family: "Karla", Sans-serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 38.4px;
+}
+
+@media screen and (max-width:700px) {
+    .logout-test-page-eigth-div h2 {
+        color: #FFFFFF;
+        font-family: "Karla", Sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 38.4px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .logout-test-page-eigth-div h2 {
+        color: #FFFFFF;
+        font-family: "Karla", Sans-serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 38.4px;
+    }
+}

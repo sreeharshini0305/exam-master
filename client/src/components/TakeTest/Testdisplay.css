@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Kanit:wght@300;400;700&family=Oswald:wght@200&family=PT+Serif:wght@400;700&family=Vollkorn:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Fira+Sans:wght@300;400;500&family=Kanit:wght@300;400;700&family=Oswald:wght@200&family=PT+Serif:wght@400;700&family=Vollkorn:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Fira+Sans:wght@300;400;500&family=Kanit:wght@300;400;700&family=Oswald:wght@200&family=PT+Serif:wght@400;700&family=Roboto+Slab:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@300;400;600;700&family=Vollkorn:wght@400;600;800&display=swap');
+
+.testdisplay-first-container {
+  background-color: white;
+}
+
+.testdisplay-container {
+  background-color: white;
+  color: white;
+  min-height: 100vh;
+}
+
+.active-testdisplay-container {
+  background-color: white;
+  color: white;
+  min-height: 100vh;
+  filter: blur(5px) brightness(50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.testdisplay-imp-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.btn {
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg: white;
+  --color: black;
+  color: var(--color);
+  /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: .5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+      /* Top-left */
+      0% var(--curve-size),
+
+      var(--curve-size) 0,
+      /* top-right */
+      100% 0,
+      100% calc(100% - var(--curve-size)),
+
+      /* bottom-right 1 */
+      calc(100% - var(--curve-size)) 100%,
+      /* bottom-right 2 */
+      0 100%);
+  transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
+}
+
+.btn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+      /* Top-left */
+      var(--border-width) calc(var(--curve-size) + var(--border-width) * .5),
+
+      calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+      /* top-right */
+      calc(100% - var(--border-width)) var(--border-width),
+
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+      var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+  clip-path: polygon(
+      /* Top-left */
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+
+      calc(100% - var(--border-width)) var(--border-width),
+
+      /* top-right */
+      calc(100% - var(--border-width)) var(--border-width),
+
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+
+      /* bottom-right 2 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* css test startb button */
+.button-btn {
+  --green: #153448;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px #153448, 0 0 9px 3px #3C5B6F;
+}
+
+.button-btn :hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.button-btn :before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%, rgba(27, 253, 156, 0.1) 60%, transparent 100%);
+}
+
+.button-btn:hover:before {
+  transform: translateX(15em);
+}
+
+.button-btn-ex {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00ff75;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 1px solid #00ff75;
+}
+
+.button-btn-ex:hover {
+  background-color: transparent;
+  color: #00ff75;
+  cursor: pointer;
+}
+
+/*card css starts here */
+
+.testdisplay-cards-card1 {
+  width: 29%;
+  min-height: 45vh;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-radius: 0;
+  transition: all .3s;
+  margin: 2%;
+
+}
+
+.testdisplay-cards-card2 {
+  min-height: 45vh;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0;
+  transition: all .3s;
+  vertical-align: center;
+  font-size: 1.1rem;
+  border: 1px solid rgba(115, 114, 114, 0.4);
+}
+
+.testdisplay-cards-card2 h1 {
+  font-family: 'Domine', serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Serif', serif;
+  font-family: 'Vollkorn', serif;
+  color: #153448;
+  font-weight: 500;
+  padding: 1.5%;
+}
+
+.testdisplay-cards-card2 h2 {
+  margin-bottom: 1%;
+  font-family: 'Domine', serif;
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Serif', serif;
+  font-family: 'Vollkorn', serif;
+  font-weight: 500;
+  /*color: #afffff;*/
+  color: #153448;
+
+}
+
+.testdisplay-cards-card2:hover {
+  transform: scale(0.99);
+  border: none;
+  cursor: pointer;
+  background-color: #DFD0B8;
+}
+
+.testdisplay-cards-card2:hover h2 {
+  color: white;
+}
+
+
+.testdisplay-cards-card2>div {
+  padding: 5%;
+}
+
+/* all cards css */
+
+.testdisplay-all-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+.testdisplay-main-cards {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+/* for pop-up function*/
+.popup-in-testdisplay {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 40vw;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  background-color: white;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active-popup-in-testdisplay {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 40vw;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  background-color: white;
+  border: 1px solid #7e03aa;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  animation-name: popuptestanim;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.active-popup-in-testdisplay>ul>li {
+  margin: 1%;
+}
+
+.popup-testdisplay-btns {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes popuptestanim {
+  100% {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+@media screen and (max-width:1190px) {
+  .testdisplay-cards-card1 {
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width:760px) {
+  .testdisplay-cards-card1 {
+    width: 75%;
+  }
+
+  .testdisplay-all-cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .testdisplay-cards-card1 {
+    width: 100%;
+  }
+
+}
+
+/* testdisplay score  css starts here*/
+
+.testsdisplay-score-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  background-color: rgba(87, 85, 85, 0.6);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgb(147, 146, 146);
+}
+
+.testsdisplay-score-container>h1 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: 'Domine', serif;
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Serif', serif;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Source Serif Pro', serif;
+  font-family: 'Vollkorn', serif;
+}
+
+.testsdisplay-score-container>table {
+  background-color: rgba(93, 91, 91, 0.7);
+  width: 97%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  border: 1px solid gray;
+  backdrop-filter: blur(5px);
+}
+
+.testsdisplay-score-container>table>tr {
+  font-size: 1.1rem;
+}
+
+.testsdisplay-score-container>table>tr>th {
+  font-size: 1.1rem;
+  padding: 10px;
+  background-color: rgb(97, 96, 96, 0.8);
+  color: #00fffb;
+}
+
+.testsdisplay-score-container>table>tr>td {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Domine', serif;
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Serif', serif;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Source Serif Pro', serif;
+  font-family: 'Vollkorn', serif;
+  color: #82ffc9;
+}
+
+@media screen and (max-width:440px) {
+  .testsdisplay-score-container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .testsdisplay-score-container>table {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .testsdisplay-score-container-top {
+    overflow: scroll;
+  }
+
+  .testsdisplay-score-container>table>tr {
+    overflow: scroll;
+  }
+}

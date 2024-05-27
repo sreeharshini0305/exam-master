@@ -1,0 +1,60 @@
+/* about page first div*/
+
+.about-page-first-div {
+    height: 90vh;
+    background-image:
+        linear-gradient(45deg,
+            #1274b1, #DFD0B8);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+.about-page-first-div h2 {
+    color: #FFFFFF;
+    font-family: "Karla", Sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.about-page-first-div h1 {
+    color: #DFD0B8;
+    font-family: "Karla", Sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:550px) {
+    .about-page-first-div h2 {
+        color: #FFFFFF;
+        font-family: "Karla", Sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+
+    }
+
+    .about-page-first-div h1 {
+        color: #DFD0B8;
+        font-family: "Karla", Sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+/* about page second div */
+.about-page-second-div-first-part-each {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 5%
+}

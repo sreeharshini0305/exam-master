@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Fira+Sans:wght@300;400;500&family=Kanit:wght@300;400;700&family=Oswald:wght@200&family=PT+Serif:wght@400;700&family=Source+Serif+Pro:wght@300;400;600;700&family=Vollkorn:wght@400;600;800&display=swap');
+
+.taketest-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+.taketest-container-test-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+    background-color: rgba(243, 241, 241, 0.8);
+    border: 1px solid white;
+    color: #153488;
+
+}
+
+.taketest-container-test-name>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.taketest-question-options {
+    border: 1px solid rgb(186, 185, 186);
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    margin-top: 20px;
+    width: 91%;
+    background-color: rgba(243, 241, 241, 0.8);
+    backdrop-filter: blur(10px);
+
+}
+
+.taketest-display-flex-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.taketest-btn {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #153448, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+}
+
+.taketest-btn:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #153448;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+.taketest-answerdstyle {
+    min-height: 20px;
+    background-image: linear-gradient(30deg, #153448, #4ce3f7);
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.taketest-normalstyle {
+    min-height: 20px;
+    background-color: white;
+    color: blue;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.takestest-question-opts-frame {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.takestest-question-opts-frame>ul>li {
+
+    font-size: 1.2rem;
+    margin-top: 1%;
+}
+
+.takestest-question-opts-frame>ul>li>p {
+    min-width: 25vw;
+    width: fit-content;
+    padding: 10px;
+}
+
+.takestest-question-opts-frame>ul>li>p:hover {
+    width: fit-content;
+    background-color: rgba(8, 8, 246, 0.2);
+    cursor: pointer;
+}

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+.addtest-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   user-select: none;
+}
+
+.addtest-container h1{
+    color:white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px 20px;
+    background-color: rgb(255, 165, 0,0.9);
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+.createtest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    margin: auto;
+    background-color: rgba(255,255,255,0.6);
+    width: 80%;
+    
+    padding-top: 5%;
+    margin-bottom: 5%;
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+}
+.createtest label{
+    color:black;
+    font-size: 1.6rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+.createtest-each-div{
+    display: flex;
+    flex-direction:column;
+    width: 80%;
+}
+.createtest-each-div input{
+    width: 100%;
+    height: 30px;
+    margin-top: 1%;
+    border: 1px solid white;
+}
+.createtest-each-div input:focus{
+    border-style: none;
+    outline-color: greenyellow;
+}
+.createtest-each-div:nth-child(3)
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.createtest-each-div:nth-child(3) button
+{
+    padding: 5px 20px;
+    width: 50%;
+    background-color: rgb(78, 161, 255);
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+.addtest-container-part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.6);
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    width: 80%;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    align-items: center;
+    border-radius: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow: hidden;
+}
+.addtest-container-part2-fist-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80%;
+    margin: auto;
+}
+.addtest-container-part2-fist-div-1st-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.addtest-container-part2-fist-div-1st-part input{
+    padding:5px;
+    height: 2rem;
+    width:100%;
+    border: none;
+}
+.addtest-container-part2-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin:2%;
+    padding:0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.addtest-container-part2-options input{
+    height: 2rem;
+    width:100%;
+    margin:0;
+    padding:5px;
+    border:none;
+    margin:-1%;
+    margin-left: 0;
+}
+.addtest-container-part2-options label{
+    margin-bottom:3%;
+}
+.addtest-container-part2-next-btn{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.addtest-container-part2-next-btn button{
+    width:60%;
+    padding:10px 20px;
+    color:white;
+    font-size: 1.5rem;
+    margin-top:2%;
+    font-weight: 500;
+    background-color: rgb(110, 110, 252);
+    border:none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px)
+{
+    .addtest-container-part2-options input{
+        height: 1.5rem;
+        width:100%;
+        margin:0;
+        padding:2px;
+        border:none;
+        margin:-2%;
+        margin-left: 0;
+    }
+
+    .addtest-container-part2-next-btn button{
+        width:100%;
+        padding:5px 10px;
+        margin-top: 5%;
+        color:white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        background-color: rgb(110, 110, 252);
+        border:none;
+        cursor: pointer;
+    }
+
+    .createtest{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+        margin: auto;
+        background-color: rgba(255,255,255,0.6);
+        width: 80%;
+        
+        padding-top: 5%;
+        margin-bottom: 5%;
+        backdrop-filter: blur(0);
+        border: 1px solid white;
+    }
+
+}
+
